@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista de tarefas</title>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <h1 class="title">Tasks</h1>
+
+      <form id="todo-form" class="container__tasks">
+        <input
+          type="text"
+          placeholder="informa a sua tarefa"
+          id="task-title-input"
+          class="input__tasks"
+        />
+        <button type="submit" id="ad-task-button" class="btn__input">+</button>
+      </form>
+
+      <dialog id="dialog" class="container__dialog">
+        <div id="divisao" class="div__dialog">
+          <p>Sua tarefa deve ter mais de 2 caracteres!</p>
+          <button type="reset" id="fechar" class="btn__dialog">x</button>
+        </div>
+      </dialog>
+
+      <section class="container__task__list">
+        <ul id="todo-list" class="task_list"></ul>
+      </section>
+    </main>
+
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
