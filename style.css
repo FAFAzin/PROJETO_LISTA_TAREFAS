@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --background-color: #1c1c1c;
@@ -17,7 +17,7 @@
 body {
   background-color: var(--background-color);
   color: var(--dark-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 main {
@@ -125,11 +125,11 @@ main {
   color: var(--white-color);
   text-align: center;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 .task_list li button:hover {
   background-color: rgb(175, 2, 2);
-  transition: 0.5s;
+  transition: 0.8s;
 }
 
 /* erros */
@@ -212,5 +212,35 @@ main {
   .btn__dialog {
     left: 351px;
     bottom: 60px;
+  }
+
+  /* Versão desktop */
+  @media screen and (min-width: 980px) {
+    .title {
+      color: var(--yellow-color);
+      font-size: 4rem;
+      text-align: center;
+      margin-top: -3rem;
+      margin-bottom: 3rem;
+    }
+    .container__tasks {
+      width: 50%;
+    }
+    .container__dialog {
+      width: 30%;
+      margin: 20rem auto;
+    }
+    .div__dialog p {
+      left: 5px;
+    }
+    .btn__dialog {
+      left: 265px;
+      bottom: 64px;
+    }
+    .task_list {
+      display: grid; /* grid */
+      grid-template-columns: repeat(2, 215px);
+      gap: 10px;
+    }
   }
 }
